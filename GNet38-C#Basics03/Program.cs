@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace GNet38_C_Basics03
 {
@@ -55,11 +56,19 @@ namespace GNet38_C_Basics03
             #region Q7
             //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
             //Call it and print pages afterward. How is the result different from question 5 ?
-            int pages = 400;
-            AddBounsPages.AddBonusPagesByRef(ref pages);
-            Console.WriteLine(pages);
+            //int pages = 400;
+            //AddBounsPages.AddBonusPagesByRef(ref pages);
+            //Console.WriteLine(pages);
             // because this time we used the reference of the original variable not a copy,
             // so when the method executed the changes were applied to the orginal variable and printed 450.
+            #endregion
+
+            #region Q8
+            //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a new array { 10.0, 12.5, 15.0 }.
+            //Call it with your prices array and print prices.Length afterward.
+            double[] prices = { 25.5, 40.0, 33.75 };
+            ReplaceArrays.ReplaceArray(ref prices);
+            Console.WriteLine(prices.Length);
             #endregion
         }
     }
