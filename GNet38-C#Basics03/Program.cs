@@ -23,7 +23,12 @@ namespace GNet38_C_Basics03
 
             #region Q3
             //Write a method called PrintWelcomeMessage that takes no parameters and prints "Welcome to the Library!".Call it from Main.
-            PrintWelcomMassage.PrintWelcomeMessage();
+            //PrintWelcomMassage.PrintWelcomeMessage();
+            #endregion
+
+            #region Q4
+            //Write a method PrintBookTitle(string title) that prints "Book title: " + title.Call it with "Clean Code".
+            PrintBookTitles.PrintBookTitle("Clean Code");
             #endregion
         }
     }
