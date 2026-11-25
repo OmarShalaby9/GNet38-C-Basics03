@@ -10,5 +10,9 @@ namespace GNet38_C_Basics03
         {
             pages += 50;
         }
+        public static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
+        }
     }
 }

@@ -45,11 +45,21 @@ namespace GNet38_C_Basics03
             #region Q6
             //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0].Call it
             //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to see, and why?
-            double[] prices = { 25.5, 40.0 };
-            ApplyDiscounts.ApplyDiscount(prices);
-            Console.WriteLine(prices[0]);
+            //double[] prices = { 25.5, 40.0 };
+            //ApplyDiscounts.ApplyDiscount(prices);
+            //Console.WriteLine(prices[0]);
             // i expected 20.5 because when we call the method this time the method worked with the reference of the original array not a copy
             // so when the method executed it chaneged the value of the array element to 20.5 and save it in the original array and when we printed it we got 20.5
+            #endregion
+
+            #region Q7
+            //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+            //Call it and print pages afterward. How is the result different from question 5 ?
+            int pages = 400;
+            AddBounsPages.AddBonusPagesByRef(ref pages);
+            Console.WriteLine(pages);
+            // because this time we used the reference of the original variable not a copy,
+            // so when the method executed the changes were applied to the orginal variable and printed 450.
             #endregion
         }
     }
