@@ -85,8 +85,14 @@ namespace GNet38_C_Basics03
             #region Q10
             //Write a method PrintBookInfo(string title, int pages = 300) where pages is optional.
             //Call it once with only a title, and once passing both a title and pages.
-            PrintBookInfos.PrintBookInfo("The Myth of Sisyphus");
-            PrintBookInfos.PrintBookInfo("The Stranger", 137);
+            //PrintBookInfos.PrintBookInfo("The Myth of Sisyphus");
+            //PrintBookInfos.PrintBookInfo("The Stranger", 137);
+            #endregion
+
+            #region Q11
+            //Using the PrintBookInfo method from the question above, 
+            //call it by naming the parameters, passing pages before title.
+            PrintBookInfos.PrintBookInfo(pages: 200, title: "The Plague");
             #endregion
         }
     }
