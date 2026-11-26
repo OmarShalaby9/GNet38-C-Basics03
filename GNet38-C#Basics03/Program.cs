@@ -66,9 +66,19 @@ namespace GNet38_C_Basics03
             #region Q8
             //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a new array { 10.0, 12.5, 15.0 }.
             //Call it with your prices array and print prices.Length afterward.
-            double[] prices = { 25.5, 40.0, 33.75 };
-            ReplaceArrays.ReplaceArray(ref prices);
-            Console.WriteLine(prices.Length);
+            //double[] prices = { 25.5, 40.0, 33.75 };
+            //ReplaceArrays.ReplaceArray(ref prices);
+            //Console.WriteLine(prices.Length);
+            #endregion
+
+            #region Q9
+            //Write a method bool TryGetPrice(string title, out double price) that returns true and sets
+            //price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0.Call it 2 and print the price if found
+            double price;
+            if (TryGetPrices.TryGetPrice("Clean Code", out price))
+            {
+                Console.WriteLine(price);
+            }
             #endregion
         }
     }
