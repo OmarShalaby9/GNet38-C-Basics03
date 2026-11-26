@@ -92,7 +92,12 @@ namespace GNet38_C_Basics03
             #region Q11
             //Using the PrintBookInfo method from the question above, 
             //call it by naming the parameters, passing pages before title.
-            PrintBookInfos.PrintBookInfo(pages: 200, title: "The Plague");
+            //PrintBookInfos.PrintBookInfo(pages: 200, title: "The Plague");
+            #endregion
+
+            #region Q12
+            //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. Call it with three book titles.
+            PrintAllTitels.PrintAllTitles("The Plague", "The Stranger", "The Myth of Sisyphus");
             #endregion
         }
     }
